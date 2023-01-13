@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/15399172e6.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/dist/css/main.css">
+  <link rel="stylesheet" href="/dist/css/lightbox.min.css">
+  <title>Home Page</title>
+</head>
+<body>  
+  <header id="header-blog">         
+      <div class="navbar top" id="navbar">
+        <img src="./img/logo-no-background.png" alt="">
+        <div>
+          <ul>
+            <li><a href="index.html#home" >Home</a></li>
+            <li><a href="index.html#about" >About</a></li>
+            <li><a href="index.html#cases" >Cases</a></li>
+            <li><a href="index.html#blog" >Blog</a></li>
+            <li><a href="index.html#contact" >Contact</a></li>
+            <a href="#home"></a>
+          </ul>
+        </div>
+      </div>
+    
+    <div class="blog-page">
+      <p>Our Blogs</p>
+    </div> 
+  </header>
+      
+  <main>
+
+
+    <!-- Blog -->
+    <section class="solutions" id="blog">
+      <img src="./img/blog-1.jpg" alt="">
+      <div class="bg-white blog-right-col">
+        <h2>Blog Post One</h2>
+        <h4><i class="fa-solid fa-user" ></i>  By Darko S., Aug4, 2021</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor officiis alias provident veritatis est, dolorem delectus sunt explicabo ipsa earum modi amet maxime mollitia eius. Ea enim ab eos, fugiat nam dolor vero aperiam omnis atque amet nihil! Veritatis at deserunt quisquam fuga officiis illum, dolor impedit quia suscipit adipisci.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor officiis alias provident veritatis est, dolorem delectus sunt explicabo ipsa earum modi amet maxime mollitia eius. Ea enim ab eos, fugiat nam dolor vero aperiam omnis atque amet nihil! Veritatis at deserunt quisquam fuga officiis illum, dolor impedit quia suscipit adipisci.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, voluptatem? Animi placeat modi libero necessitatibus. Minima amet magnam quisquam? Exercitationem itaque reprehenderit libero odio distinctio ab placeat saepe sed sint.</p>
+      </div>
+    </section>
+
+
+    <footer class="main-footer">
+      <div>
+        <a href="#"><i class="fa-brands fa-facebook fa-3x"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter fa-3x"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin fa-3x"></i></a>
+        <p>Copyright &copy; 2022 - BizLedger</p>
+      </div>
+    </footer>
+
+  </main>
+  
+
+
+
+  <script>
+  // Navbar effects
+    const navbar = document.getElementById('navbar');
+    let scrolled = false;
+    window.onscroll = () =>{
+      if(window.pageYOffset>100){
+        navbar.classList.remove('top');
+        if(!scrolled){
+          navbar.style.transform = 'translateY(-70px)';
+        }
+        setTimeout(() =>{
+          navbar.style.transform = 'translateY(0)';
+          scrolled = true;
+        }, 1000);
+      }
+      else{
+        navbar.classList.add('top');
+        scrolled = false;
+      }
+    }
+
+
+  </script>
+
+  <script src="./js/lightbox-plus-jquery.min.js"></script>
+  
+</body>
+</html>

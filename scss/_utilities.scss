@@ -1,0 +1,107 @@
+$green-color: #00A300;
+$blue-color: #2E2EFF;
+$grey-color: #979797;
+$light-color: #E8E8E8;
+
+// Reset
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Rubik', sans-serif;
+}
+
+a{
+  text-decoration: none;  
+
+}
+ul{
+  list-style: none;
+  color: $light-color;
+}
+.btn{
+  &-dark{
+    background: $green-color;
+    color: white;
+    padding: 1rem 1rem; 
+    border-radius: 5px;   
+  }
+  &-light{
+    background: none;
+    color: $light-color;
+    padding: 1rem 1rem;
+    border: 1px solid $light-color; 
+    border-radius: 5px; 
+  }
+}
+
+h1, h2, h3 {
+  padding: 1rem 0rem;
+}
+h4{
+  padding: 0.5rem 0rem;
+}
+
+.signup-form{
+  
+  input{
+    display: block;
+    width: 400px;
+    margin:1rem;
+    border: none;
+    height: 25px;
+    padding: 5px;
+  }
+  textarea{
+    display: block;
+    width: 400px;
+    margin:1rem;
+    border: none;
+  }
+  button{
+    width: 400px;
+    margin:1rem;
+    background: $green-color;
+    border: none;
+    color: white;
+    height: 35px;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    &:hover{
+      opacity: 0.8;
+    }
+  }
+}
+
+.main-footer{
+  text-align: center;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #333;
+  color: white;
+  padding: 3rem;
+
+  .fa-brands{
+    color: white;
+    padding: 1rem 1rem;
+  }
+}
+
+.bg-blue{
+  background: #0E86D4;
+  color: white;
+}
+.bg-green{
+  background: $green-color; 
+  color: white;
+}
+.bg-white{
+  background: white;
+  color: black;
+}
