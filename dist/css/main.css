@@ -132,11 +132,11 @@ h4 {
 }
 
 #header-home {
-  background: url("/dist/img/city_night_2.jpg") no-repeat center center/cover;
+  background: url("/img/city_night_2.jpg") no-repeat center center/cover;
   height: 100vh;
 }
 #header-blog {
-  background: url("/dist/img/city_night_2.jpg") no-repeat center center/cover;
+  background: url("/img/city_night_2.jpg") no-repeat center center/cover;
   height: 30vh;
 }
 
